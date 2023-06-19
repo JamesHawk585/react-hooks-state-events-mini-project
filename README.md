@@ -23,19 +23,19 @@ need to pass down from `App`.
 
 ### TaskList
 
-First, we'll want to display all the tasks in our app. Pass down the task data
+[] First, we'll want to display all the tasks in our app. Pass down the task data
 from `App` to `TaskList`, and display each task using the `Task` component. Make
 sure to use a `key` prop!
 
 ### Task
 
-Update the `Task` component so that it shows the task's text and category.
+[] Update the `Task` component so that it shows the task's text and category.
 
 _When the delete button is clicked_, the task should be removed from the list.
 
 ### CategoryFilter
 
-Pass the list of categories to this component from `App`. Then, update this
+[] Pass the list of categories to this component from `App`. Then, update this
 component to display `<button>` elements for each category. In order to pass the test, the buttons will need a key prop equal to the category.
 
 _When a button is clicked_, the following should happen:
@@ -59,3 +59,11 @@ are captured in state.
 _When the form is submitted_, add a new task to the list with the text and
 category from the form. For the tests for this feature to pass, you'll need a
 callback prop named `onTaskFormSubmit` that takes a task object as an argument.
+
+
+App
+  ├── Category Filter
+  ├── NewTaskForm
+  └── TaskList 
+      └── Task 
+    
