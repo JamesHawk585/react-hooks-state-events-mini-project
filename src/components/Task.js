@@ -1,5 +1,6 @@
 import React from "react";
-import uuid from "uuid";
+// import { v4 as uuid } from "uuid";
+
 
 function Task({ category, text, onDelete}) {
   return (
@@ -7,6 +8,7 @@ function Task({ category, text, onDelete}) {
       <div className="label">{category}</div>
       <div className="text">{text}</div>
       <button className="delete" onClick={onDelete}>X</button>
+
     </div>
   );
 }
