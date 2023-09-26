@@ -1,18 +1,17 @@
 import React from "react";
-// import { v4 as uuid } from "uuid";
 
+function Task({ text, category, onDeleteTask }) {
+  function handleClick() {
+    onDeleteTask(text);
+  }
 
-function Task({ category, text, id, onDelete }) {
-  const handleDelete = () => {
-    onDelete(id);
-  };
-  
   return (
-
     <div className="task">
       <div className="label">{category}</div>
       <div className="text">{text}</div>
-      <button className="delete" onClick={handleDelete}>X</button>
+      <button onClick={handleClick} className="delete">
+        X
+      </button>
     </div>
   );
 }
